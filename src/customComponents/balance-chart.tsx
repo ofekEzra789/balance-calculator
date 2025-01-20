@@ -71,7 +71,7 @@ export default function BalanceChart() {
   return (
     <Card className="flex flex-col p-3">
       <CardHeader className="items-center pb-0 mb-3">
-        <CardTitle className="text-3xl">Pie Chart - Balance</CardTitle>
+        <CardTitle className="text-2xl">Pie Chart - Balance</CardTitle>
         <CardDescription>Total Balance</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
