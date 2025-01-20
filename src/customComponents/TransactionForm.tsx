@@ -66,7 +66,7 @@ export default function TransactionForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="grid grid-cols-1 gap-7 sm:grid-cols-2 items-center md:grid-cols-3"
+          className="grid grid-cols-1 gap-6 sm:grid-cols-2 items-center md:grid-cols-3"
         >
           <FormField
             control={form.control}
