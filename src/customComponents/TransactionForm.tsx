@@ -66,13 +66,13 @@ export default function TransactionForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="grid grid-cols-1 gap-5 sm:grid-cols-2 items-center md:grid-cols-3"
+          className="grid grid-cols-1 gap-7 sm:grid-cols-2 items-center md:grid-cols-3"
         >
           <FormField
             control={form.control}
             name="description"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="h-[90px]">
                 <FormLabel>Description</FormLabel>
                 <FormControl>
                   <Input placeholder="description" {...field} />
@@ -86,7 +86,7 @@ export default function TransactionForm() {
             control={form.control}
             name="amount"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="h-[90px]">
                 <FormLabel>Amount</FormLabel>
                 <FormControl>
                   <Input type="number" placeholder="amount" {...field} />
@@ -100,7 +100,7 @@ export default function TransactionForm() {
             control={form.control}
             name="transactionType"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="h-[90px]">
                 <FormLabel>Transaction Type</FormLabel>
                 <Select onValueChange={field.onChange}>
                   <FormControl>

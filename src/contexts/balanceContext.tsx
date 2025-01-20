@@ -11,6 +11,8 @@ export interface Transaction {
 export interface Balance {
   total: number;
   transactions: Transaction[];
+  totalIncomes: number;
+  totalExpenses: number;
 }
 
 export const BalanceContext = createContext<Balance | undefined>(undefined);
@@ -31,7 +33,9 @@ export function useBalanceDispacherContext() {
   const dispatch = useContext(BalanceDispacherContext);
 
   if (dispatch === null) {
-    throw new Error("useBalanceDispacherContext must be used with a BalanceDispacherContext")
+    throw new Error(
+      "useBalanceDispacherContext must be used with a BalanceDispacherContext"
+    );
   }
-  return dispatch
+  return dispatch;
 }
